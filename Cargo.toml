@@ -1,0 +1,15 @@
+[package]
+name = "win-stdio-handle-dbg"
+version = "0.1.0"
+edition = "2021"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/Xiphoseer/win-stdio-handle-dbg"
+description = "Print information about the type of Handle used for stdout to stderr on Windows."
+
+[dependencies]
+windows = { version = "0.43.0", features = [
+    "Win32_Foundation",
+    "Win32_System_Console",
+    "Win32_Storage_FileSystem"
+] }

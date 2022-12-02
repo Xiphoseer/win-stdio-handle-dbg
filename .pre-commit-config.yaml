@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: my-hook
+        name: Handle Debugger
+        always_run: true
+        language: system
+        entry: cargo
+        args: ["run", "-q", "--release"]
+        files: "Cargo\\.toml"
